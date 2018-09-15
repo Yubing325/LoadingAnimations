@@ -8,11 +8,17 @@
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
+  <script>
+      setInterval(function(){
+          $(".loading").fadeOut();
+      },3000)
+  </script>
   <link rel="stylesheet" href="css/style.css">
   <title>Demo1</title>
 </head>
 <body>
-    <div class="loading"></div>
+    <div class="loading"> <div class="pic"></div></div>
+   
     <img src="http://verdewall.com/wp-content/uploads/2017/05/City-Background-403.jpg" alt="The city">
 </body>
 </html>
