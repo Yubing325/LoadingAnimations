@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script>
+     document.onreadystatechange = function(){
+         if(document.readyState == "complete"){
+             $(".loading").fadeOut();
+         }
+     }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+  .loading {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+
+.loading .pic {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    margin: auto;
+}
+.loading .pic i{
+
+}
+  </style>
+  <title>Demo3 - CSS Loading Animation</title>
+</head>
+<body>
+    <div class="loading"> 
+        <div class="pic">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+   
+    <img src="http://verdewall.com/wp-content/uploads/2017/05/City-Background-403.jpg" alt="The city">
+
+    <img src="https://images.pexels.com/photos/627823/pexels-photo-627823.jpeg?cs=srgb&dl=autumn-background-beautiful-627823.jpg&fm=jpg" alt="sky">
+
+
+</body>
+</html>
