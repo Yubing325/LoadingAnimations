@@ -15,4 +15,4 @@ note: please clean your cache during test otherwise the effect may be less signi
 
 ### demo3
 
-this demo using CSS3 to build the animations. CSS3 is greater than GIF loading methods in terms of the size of codes and execution time.
+this demo using CSS3 to build the animations. CSS3 is greater than GIF loading methods in terms of the size and execution time.
