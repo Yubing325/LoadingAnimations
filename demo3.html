@@ -30,21 +30,43 @@
     right:0;
     margin: auto;
 }
+
 .loading .pic i{
     display: block;
     float: left;
     width: 6px;
     height: 50px;
-    background: rgb(8, 106, 197);
+    background: #399;
     margin: 0 2px;
-    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+        -ms-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+    -webkit-animation: load 1.2s infinite;
+            animation: load 1.2s infinite;
 }
 
-@keyframes load{
-    0%, 40%, 100% {
-        transform: scaleY(0.4)
+.loading .pic i:nth-child(1){}
+.loading .pic i:nth-child(2){-webkit-animation-delay: 0.1s;animation-delay: 0.1s;}
+.loading .pic i:nth-child(3){-webkit-animation-delay: 0.2s;animation-delay: 0.2s;}
+.loading .pic i:nth-child(4){-webkit-animation-delay: 0.3s;animation-delay: 0.3s;}
+.loading .pic i:nth-child(5){-webkit-animation-delay: 0.4s;animation-delay: 0.4s;}
+@-webkit-keyframes load{
+    0%,40%,100% {
+        -webkit-transform: scaleY(0.4);
+                transform: scaleY(0.4)
     }
-    20%{transform: scaleY(1)}
+    20%{
+        -webkit-transform: scaleY(1);
+                transform: scaleY(1)}
+}
+@keyframes load{
+    0%,40%,100% {
+        -webkit-transform: scaleY(0.4);
+                transform: scaleY(0.4)
+    }
+    20%{
+        -webkit-transform: scaleY(1);
+                transform: scaleY(1)}
 }
   </style>
   <title>Demo3 - CSS Loading Animation</title>
