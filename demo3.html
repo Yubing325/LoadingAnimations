@@ -8,14 +8,7 @@
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
-  <script>
-     document.onreadystatechange = function(){
-         if(document.readyState == "complete"){
-             $(".loading").fadeOut();
-         }
-     }
-  </script>
-  <link rel="stylesheet" href="css/style.css">
+  
   <style>
   .loading {
     height: 100%;
@@ -38,7 +31,20 @@
     margin: auto;
 }
 .loading .pic i{
+    display: block;
+    float: left;
+    width: 6px;
+    height: 50px;
+    background: rgb(8, 106, 197);
+    margin: 0 2px;
+    transform: scaleY(0.4);
+}
 
+@keyframes load{
+    0%, 40%, 100% {
+        transform: scaleY(0.4)
+    }
+    20%{transform: scaleY(1)}
 }
   </style>
   <title>Demo3 - CSS Loading Animation</title>
@@ -54,9 +60,9 @@
         </div>
     </div>
    
-    <img src="http://verdewall.com/wp-content/uploads/2017/05/City-Background-403.jpg" alt="The city">
+    <!-- <img src="http://verdewall.com/wp-content/uploads/2017/05/City-Background-403.jpg" alt="The city">
 
-    <img src="https://images.pexels.com/photos/627823/pexels-photo-627823.jpeg?cs=srgb&dl=autumn-background-beautiful-627823.jpg&fm=jpg" alt="sky">
+    <img src="https://images.pexels.com/photos/627823/pexels-photo-627823.jpeg?cs=srgb&dl=autumn-background-beautiful-627823.jpg&fm=jpg" alt="sky"> -->
 
 
 </body>
