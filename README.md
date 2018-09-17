@@ -16,3 +16,7 @@ note: please clean your cache during test otherwise the effect may be less signi
 ### demo3
 
 this demo using CSS3 to build the animations. CSS3 is greater than GIF loading methods in terms of the size and execution time.
+
+### demo4
+
+this demo shows a top-fixed bar loading animations and when the page was loaded, it's fade out automatically. You can cusomize the color and bar height in stylesheet.
