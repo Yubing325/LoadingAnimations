@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        $(".loading .pic").animate({width: "10%"},100)
+    </script>
+    <style>
+            .loading {
+              height: 100%;
+              width: 100%;
+              background-color: #fff;
+              z-index: 99;
+              position: fixed;
+              top:0;
+              left: 0;
+          }
+          
+          .loading .pic {
+              width: 100%;
+              height: 3px;
+              position: absolute;
+              top:0;
+              bottom: 0;
+              left: 0;
+              right:0;
+              background: #f33;
+          }
+    </style>
+
+    <title>Demo4 - Fixed Top loading bar</title>
+</head>
+<body>
+
+<div class="loading">
+    <div class="pic"></div>
+</div>
+    <header></header>
+    <section class="banner"><img src="http://verdewall.com/wp-content/uploads/2017/05/City-Background-403.jpg" alt="The city">
+
+        <img src="https://images.pexels.com/photos/627823/pexels-photo-627823.jpeg?cs=srgb&dl=autumn-background-beautiful-627823.jpg&fm=jpg" alt="sky"></section>
+
+        <script>
+                $(".loading .pic").animate({width: "30%"},100)
+            </script>
+    <section class="about"><img src="http://verdewall.com/wp-content/uploads/2017/05/City-Background-403.jpg" alt="The city">
+
+        <img src="https://images.pexels.com/photos/627823/pexels-photo-627823.jpeg?cs=srgb&dl=autumn-background-beautiful-627823.jpg&fm=jpg" alt="sky"></section>
+        <script>
+                $(".loading .pic").animate({width: "70%"},100)
+            </script>
+    <section class="news"><img src="http://verdewall.com/wp-content/uploads/2017/05/City-Background-403.jpg" alt="The city">
+    </section>
+
+    <script>
+            $(".loading .pic").animate({width: "100%"},100)
+        </script>
+    <footer></footer>
+</body>
+</html>
