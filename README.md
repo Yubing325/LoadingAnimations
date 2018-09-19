@@ -20,3 +20,12 @@ this demo using CSS3 to build the animations. CSS3 is greater than GIF loading m
 ### demo4
 
 this demo shows a top-fixed bar loading animations and when the page was loaded, it's fade out automatically. You can cusomize the color and bar height in stylesheet.
+
+
+### demo5 - CSS3 Percentage display
+
+This demo shows a complicated loading animations based on the real loading process and display percentage loading.
+
+In this demo the `new Image()` object , `complete` property , `onload, onerror, onkeydown, onkeypress` Event was being used.
+
+> note: be sure to put `src` behind the `onload` event to avoid display error in IE brower.
